@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="93">
+	<author>Dajnet/Fs25 JDFAN/TBART</author>
+    <version>1.1.1.1</version>
+    
+	<title>
+        <en>Butcher Shop</en>
+    </title>
+    <description>
+		<en>
+		<![CDATA[
+Creates Meats from Animals
+]]>
+		</en>
+    </description>
+    
+	<iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>  
+	
+	<l10n filenamePrefix="translations/l10n"/>
+	
+	
+    <placeableTypes>
+        <!-- Required: Register the placeable type -->
+        <type name="extendedProductionPoint" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >
+            <specialization name="extendedProductionPoint"/>
+            <specialization name="infoTrigger" />
+        </type>
+    </placeableTypes>
+
+    <placeableSpecializations>
+        <!-- Required: Add specialization -->
+        <specialization name="extendedProductionPoint" className="PlaceableExtendedProductionPoint" filename="scripts/PlaceableExtendedProductionPoint.lua"/>
+    </placeableSpecializations>		
+		
+	
+	<fillTypes filename="newfilltypes.xml" />
+				
+	<storeItems>
+        <storeItem xmlFilename="factory.xml"/>
+		<storeItem xmlFilename="pallets/groundbeefPallet.xml"/>
+		<storeItem xmlFilename="pallets/steakPallet.xml"/>
+		<storeItem xmlFilename="pallets/chickenfilletPallet.xml"/>
+		<storeItem xmlFilename="pallets/muttonPallet.xml"/>
+		<storeItem xmlFilename="pallets/chevonPallet.xml"/>		
+<!--		
+		<storeItem xmlFilename="pallets/vealPallet.xml"/>
+		<storeItem xmlFilename="pallets/lambchopsPallet.xml"/>
+		<storeItem xmlFilename="pallets/venisonPallet.xml"/>
+		<storeItem xmlFilename="pallets/wholeduckPallet.xml"/>
+		
+-->
+		<storeItem xmlFilename="pallets/pepperoniPallet.xml"/>
+		<storeItem xmlFilename="pallets/sausagePallet.xml"/>
+		<storeItem xmlFilename="pallets/porkPallet.xml"/>
+		<storeItem xmlFilename="pallets/hamPallet.xml"/>
+		<storeItem xmlFilename="pallets/baconPallet.xml"/>
+    </storeItems>
+	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/PlaceableExtendedProductionPoint.lua" />
+	</extraSourceFiles>	
+   	
+</modDesc>

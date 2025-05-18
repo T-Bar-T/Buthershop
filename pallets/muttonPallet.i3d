@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="muttonPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="chocolateBox_normal.png"/>
+    <File fileId="7" filename="chocolateBox_specular.png"/>
+    <File fileId="2" filename="euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="euroPallet01_normal.png"/>
+    <File fileId="4" filename="euroPallet01_specular.png"/>
+    <File fileId="5" filename="muttonBox_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="raisinBox_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="muttonPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="raisinBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+      <Shape name="pallet_vis" shapeId="2" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5">
+        <Shape name="dynamicMountTrigger" translation="0 0.0904753 0" shapeId="3" visibility="false" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" nodeId="18"/>
+        <TransformGroup name="content" nodeId="19">
+          <Shape name="raisinBox01" translation="-0.303998 0.145827 -0.197137" shapeId="4" clipDistance="100" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox01Tension" shapeId="5" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox02" translation="-0.302418 0.145827 0.204286" shapeId="4" clipDistance="100" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox02Tension" shapeId="5" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox03" translation="0.297613 0.145033 -0.197137" shapeId="4" clipDistance="100" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox03Tension" shapeId="5" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox04" translation="0.299194 0.145033 0.204286" shapeId="4" clipDistance="100" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox04Tension" shapeId="5" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox05" translation="-0.303998 0.346826 -0.197137" rotation="0 180 0" shapeId="4" clipDistance="100" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox05Tension" shapeId="5" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox06" translation="-0.302418 0.346826 0.204286" rotation="0 180 0" shapeId="4" clipDistance="100" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox06Tension" shapeId="5" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox07" translation="0.297613 0.346032 -0.197137" rotation="0 180 0" shapeId="4" clipDistance="100" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox07Tension" shapeId="5" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox08" translation="0.299194 0.346032 0.204286" rotation="0 180 0" shapeId="4" clipDistance="100" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox08Tension" shapeId="5" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox09" translation="-0.303998 0.547071 -0.197137" shapeId="4" clipDistance="100" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox09Tension" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox10" translation="-0.302418 0.547071 0.204286" shapeId="4" clipDistance="100" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox10Tension" shapeId="5" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox11" translation="0.297613 0.546277 -0.197137" shapeId="4" clipDistance="100" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox11Tension" shapeId="5" nodeId="41" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+          <Shape name="raisinBox12" translation="0.299194 0.546277 0.204286" shapeId="4" clipDistance="100" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7">
+            <Shape name="raisinBox12Tension" shapeId="5" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="44">
+          <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="45" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

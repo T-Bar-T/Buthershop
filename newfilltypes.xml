@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+<!-- ############################ 	-->
+<!-- 		BUTCHER SHOP		-->
+<!-- ############################ 	-->
+	<fillTypes>
+		<fillType name="COWMEAT" title="Cows" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.80" />
+            <image      hud     ="hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+				
+		<fillType name="PIGMEAT" title="Pigs" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.80" />
+            <image      hud     ="hud/fillTypes/hud_fill_pig.png" />
+        </fillType>		
+		<fillType name="POULTRY" title="Chickens" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.80" />
+            <image      hud     ="hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		
+<!--		
+		<fillType name="LAMBMEAT" title="Lamb Meat" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.00" />
+            <image      hud     ="hud/fillTypes/hud_fill_lamb.png" />
+        </fillType>
+		
+		<fillType name="GOATMEAT" title="Goat Meat" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.80" />
+            <image      hud     ="hud/fillTypes/hud_fill_goat.png" />
+        </fillType>			
+-->
+		<fillType name="SHEEPMEAT" title="Sheep" showOnPriceTable="false">
+            <physics massPerLiter="0.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.80" />
+            <image      hud     ="hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+
+	
+		<fillType name="steak" title="Steak" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_steak.png" />
+			<pallet filename="pallets/steakPallet.xml" />
+			<economy pricePerLiter="2.51">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="1.99" />
+					<factor period="4"  value="2.02" />
+					<factor period="5"  value="2.03" />
+					<factor period="6"  value="2.06" />
+					<factor period="7"  value="2.51" />
+					<factor period="8"  value="2.03" />
+					<factor period="9"  value="2.06" />
+					<factor period="10" value="2.04" />
+					<factor period="11" value="1.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+		
+		<fillType name="sausage" title="Sausage" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_sausage.png" />
+			<pallet filename="pallets/sausagePallet.xml" />
+			<economy pricePerLiter="1.55">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="1.55" />
+					<factor period="4"  value="1.32" />
+					<factor period="5"  value="1.25" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+		<fillType name="pepperoni" title="Pepperoni" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_pepperoni.png" />
+			<pallet filename="pallets/pepperoniPallet.xml" />
+			<economy pricePerLiter="1.55">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="1.55" />
+					<factor period="4"  value="1.32" />
+					<factor period="5"  value="1.25" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		<fillType name="pork" title="Pork" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_pork.png" />
+			<pallet filename="pallets/porkPallet.xml" />
+			<economy pricePerLiter="2.55">
+				<factors>
+					<factor period="1"  value="1.98" />
+					<factor period="2"  value="2.06" />
+					<factor period="3"  value="1.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="2.55" />
+					<factor period="12" value="1.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+		<fillType name="ham" title="Ham" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_ham.png" />
+			<pallet filename="pallets/hamPallet.xml" />
+			<economy pricePerLiter="2.55">
+				<factors>
+					<factor period="1"  value="1.98" />
+					<factor period="2"  value="2.06" />
+					<factor period="3"  value="1.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="2.55" />
+					<factor period="12" value="1.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+		<fillType name="bacon" title="Bacon" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_bacon.png" />
+			<pallet filename="pallets/baconPallet.xml" />
+			<economy pricePerLiter="2.55">
+				<factors>
+					<factor period="1"  value="1.98" />
+					<factor period="2"  value="2.06" />
+					<factor period="3"  value="1.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="2.55" />
+					<factor period="12" value="1.94" />
+				</factors>
+			</economy>
+		</fillType>			
+		
+		<fillType name="groundbeef" title="Ground Beef" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_groundbeef.png" />
+			<pallet filename="pallets/groundbeefPallet.xml" />
+			<economy pricePerLiter="2.51">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="1.99" />
+					<factor period="4"  value="2.02" />
+					<factor period="5"  value="2.03" />
+					<factor period="6"  value="2.06" />
+					<factor period="7"  value="2.51" />
+					<factor period="8"  value="2.03" />
+					<factor period="9"  value="2.06" />
+					<factor period="10" value="2.04" />
+					<factor period="11" value="1.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+<!--		
+		<fillType name="veal" title="Veal" showOnPriceTable="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_veal.png" />
+			<pallet filename="pallets/vealPallet.xml" />
+			<economy pricePerLiter="0.51">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>	
+		
+-->		
+
+		<fillType name="chickenfillet" title="Chicken Fillet" showOnPriceTable="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_chickenfillet.png" />
+			<pallet filename="pallets/chickenfilletPallet.xml" />
+			<economy pricePerLiter="0.95">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>
+
+		<fillType name="mutton" title="Mutton" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_mutton.png" />
+			<pallet filename="pallets/muttonPallet.xml" />
+			<economy pricePerLiter="1.88">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.88" />
+					<factor period="10" value="1.72" />
+					<factor period="11" value="1.42" />
+					<factor period="12" value="1.01" />
+				</factors>
+			</economy>
+		</fillType>
+
+		<fillType name="chevon" title="Chevon" showOnPriceTable="true" isPalletType="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_chevon.png" />
+			<pallet filename="pallets/chevonPallet.xml" />
+			<economy pricePerLiter="1.88">
+				<factors>
+					<factor period="1"  value="1.00" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.88" />
+					<factor period="10" value="1.72" />
+					<factor period="11" value="1.42" />
+					<factor period="12" value="1.01" />
+				</factors>
+			</economy>
+		</fillType>
+		
+<!--		
+
+		<fillType name="lambchops" title="Lamb Chops" showOnPriceTable="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_lambchops.png" />
+			<pallet filename="pallets/lambchopsPallet.xml" />
+			<economy pricePerLiter="0.55">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>		
+		<fillType name="venison" title="Venison" showOnPriceTable="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_venison.png" />
+			<pallet filename="pallets/venisonPallet.xml" />
+			<economy pricePerLiter="0.55">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>
+		
+		<fillType name="WHOLEDUCK" title="Whole Duck" showOnPriceTable="true">
+			<physics massPerLiter=".25" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/fillTypes/hud_fill_wholeDuck.png" />
+			<pallet filename="pallets/wholeduckPallet.xml" />
+			<economy pricePerLiter="0.55">
+				<factors>
+					<factor period="1"  value="0.98" />
+					<factor period="2"  value="1.06" />
+					<factor period="3"  value="0.99" />
+					<factor period="4"  value="1.02" />
+					<factor period="5"  value="1.03" />
+					<factor period="6"  value="1.06" />
+					<factor period="7"  value="1.10" />
+					<factor period="8"  value="1.03" />
+					<factor period="9"  value="1.06" />
+					<factor period="10" value="1.04" />
+					<factor period="11" value="0.98" />
+					<factor period="12" value="0.94" />
+				</factors>
+			</economy>
+		</fillType>
+-->		
+	</fillTypes>	
+    <fillTypeCategories>		
+		<fillTypeCategory name="PRODUCT">SAUSAGE PEPPERONI PORK HAM BACON GROUNDBEEF STEAK MUTTON CHEVON CHICKENFILLET</fillTypeCategory>		
+		<fillTypeCategory name="SELLINGSTATION_PRODUCTS">SAUSAGE PEPPERONI PORK HAM BACON GROUNDBEEF STEAK MUTTON CHEVON CHICKENFILLET</fillTypeCategory>		
+    </fillTypeCategories>	
+    
+</map>

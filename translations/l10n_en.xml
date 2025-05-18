@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+		<text name="function_Factory" text="Creates Meats from Animals" />		
+		
+        <text name="message_unloadAnimalSuccess" text="Animals were successfully moved to %s!" />
+        <text name="message_unloadAnimalConfirmation" text="Do you want to move %d animals (%s) to the %s?" />
+        <text name="button_moveAnimal" text="Move to %s" />
+
+         <!-- Only required when a 'minimumAge' is set as part of the </animalInput> -->
+        <text name="message_animalTooYoung" text="This animal is too young, a minimum age of %s will be accepted!" />
+
+        <!-- Only required when a 'maximumAge' is set as part of the </animalInput> -->
+        <text name="message_animalTooOld" text="This animal is too old, a maximum age of %s will be accepted!" />
+		
+	</texts>
+</l10n>
